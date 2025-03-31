@@ -12,25 +12,25 @@
 
     <script>
         var a = 4;
-       // console.log(a);
+        // console.log(a);
         var b = "suryabhan";
-        console.log(a +" "+ b);
+        console.log(a + " " + b);
         var c = true;
         console.log(c);
         var d = 5;
         var e = 6;
-        console.log(d+e);
+        console.log(d + e);
 
         // type conversion
         h = 5;
         console.log(h);
-        
+
 
         // data types in js
 
         var f = 5;
         var g = 6;
-        console.log(d+e);
+        console.log(d + e);
         console.log(typeof h);
         console.log(typeof (b));
         console.log(typeof (c));
@@ -40,16 +40,32 @@
         console.log(j);
 
         // type coercion in js
-          // 1 priority =>  string 
-            // 2 priority =>  number
-            // 3 priority =>  boolean
-            
-        
+        // 1 priority =>  string 
+        // 2 priority =>  number
+        // 3 priority =>  boolean
+
+
 
         var k = "16";
         var l = 4;  // 16+4 = 164  =>"4"
-        console.log(k+l);
-        console.log(k-l);
+        console.log(k + l);
+        console.log(k - l);
+
+
+
+        // function scope { }
+
+        function ram() {
+            var x = 10; // local variable
+
+            {
+                var x = 20; // local variable
+
+            }
+            console.log(x); // 10
+        }
+
+        
     </script>
 </body>
 
