@@ -24,9 +24,20 @@ function sur() {
     // alert(age >= 18 ? "You are an adult." : "You are a minor.");
 
     //  Task 2: Ask if the user has completed a course and has a certificate
-    let completed = confirm("Have you completed the course?");
-    let certificate = confirm("Do you have a certificate?");
-    alert(completed && certificate ? "Completed" : "Not completed");
+    // let completed = confirm("Have you completed the course?");
+    // let certificate = confirm("Do you have a certificate?");
+    // alert(completed && certificate ? "Completed" : "Not completed");
+
+    // Task 3: Ask the user for the price of an item and check if they have a discount coupon
+    // let price = parseFloat(prompt("Enter the price of the item:"));
+    // let hasCoupon = confirm("Do you have a discount coupon?");
+    // let finalPrice = hasCoupon ? price * 0.9 : price;
+    // alert( finalPrice.toFixed(2) );
+
+    // Task 4: Ask the user for their exam score and determine if they passed or failed
+    let score = parseInt(prompt("Enter your exam score:"));
+    alert(score > 33 ? "Pass" : "Fail");
+
 
 
 
