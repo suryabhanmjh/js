@@ -70,10 +70,23 @@ function sur() {
     // let message = deleteCon ? "Item deleted" : "Cancelled";
     // alert(message);
 
+    //Task 8: Check enter number is positive or negative
+    // let number = parseFloat(prompt("Enter a number:"));
+    // let result = number > 0 ? "The number is Positive" : number < 0 ? "The number is Negative" : "The number is Zero";
+    // alert(result);
+
+    // Task 9:  Print 1-10 using while loop
+    // let i = 1;
+    // let result = ""; 
+    // while (i <= 10) {
+    //     result += i + " ";
+    //     i++;
+
+    // }
+    // alert(result.trim()); // Remove trailing space using trim()
 
 
-
-
+    // Task 10: 
 
 }
 
