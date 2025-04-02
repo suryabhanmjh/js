@@ -76,14 +76,14 @@ function sur() {
     // alert(result);
 
     // Task 9:  Print 1-10 using while loop
-    let i = 1;
-    let result = ""; 
-    while (i <= 10) {
-        result += i + " ";
-        i++;
+    // let i = 1;
+    // let result = ""; 
+    // while (i <= 10) {
+    //     result += i + " ";
+    //     i++;
 
-    }
-    alert(result.trim()); // Remove trailing space using trim()
+    // }
+    // alert(result.trim()); // Remove trailing space using trim()
 
 
     // Task 10: 
