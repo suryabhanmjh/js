@@ -1,8 +1,27 @@
-button{
-    border-radius: solid;
+button {
+    padding: 10px 20px;
+    border: 2px solid #008CBA;
     border-radius: 9px;
-    color: rgb(18, 20, 20);
-    margin-bottom: 10px;
-    background-color: aqua;
+    color: #333;
+    margin: 10px 0;
+    background-color: #00CED1;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: block;
+    width: 250px;
+}
 
+button:hover {
+    background-color: #008CBA;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
