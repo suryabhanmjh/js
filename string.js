@@ -1,9 +1,50 @@
-let a1="string 1"
-let a2="This is string 2"
+// let a1="string 1"
+// let a2="This is string 2"
 
-console.log(a1.length);
-console.log(a2.length);  //length of string
+// console.log(a1.length);
+// console.log(a2.length);  //length of string
 
-a1.concat(a2); //concatenate two strings
-console.log(a1.concat(a2)); //concatenate two strings
-document.write(a1.concat(a2)); //concatenate two strings
+// a1.concat(a2); //concatenate two strings
+// console.log(a1.concat(a2)); //concatenate two strings
+// document.write(a1.concat(a2) +"<br>"); //concatenate two strings
+
+// //uppercase and lowercase
+// console.log(a1.toUpperCase()); //convert to uppercase
+// console.log( "<br> "+a2.toLowerCase()); //convert to lowercase
+
+// document.write(a1.toUpperCase());//convert to uppercase
+// document.write("<br>"+a2.toLowerCase()+"<br>"); //convert to lowercase
+
+// //charAt() method to get the character at a specific index
+// document.write("<br>"+a1.charAt(0)); //get first character of string
+// document.write("<br>"+a2.charAt(0)+"<br>"); //get first character of string
+
+// //charCodeAt() method to get the character code of a string
+// document.write(" <br> charCodeAt method");
+// document.write("<br>"+a1.charCodeAt(0)); //get char code of first character of string
+// document.write("<br>"+a2.charCodeAt(0)+"<br>"); //get char code of first character of string
+
+// //indexOf() method to get the index of a string
+// document.write("<br>"+a1.indexOf("s")+"<br>"); //get index of first occurrence of s in string
+// //slice() method to get the substring of a string
+// document.write(" <br>slice method");
+// document.write("<br>"+a1.slice(0, 4)); //get substring from index 0 to 4
+// document.write("<br>"+a1.slice(0, 2)); //get substring from index 0 to 2
+
+
+// day 2 
+
+let str="Javascript is a programming language javascript is simple"
+
+//replace() method to replace a string with another string
+document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
+
+//replaceAll() method to replace all occurrences of a string with another string
+document.write("<br>"+str.replaceAll("javascript", "java")); //replace all javascript with java
+
+// replace all  by replace method
+document.write("<br>"+str.replace(/javascript/g, "java")); //replace all javascript with java
+
+//g => convert global.... gi => case insensitive
+//i => case insensitive
+document.write("<br>"+str.replace(/javascript/gi, "java")); //replace all javascript with java
