@@ -34,7 +34,7 @@
 
 // day 2 
 
-let str="Javascript is a programming language javascript is simple"
+let str="   Javascript is a programming language javascript is simple    "
 
 //replace() method to replace a string with another string
 document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
@@ -48,3 +48,16 @@ document.write("<br>"+str.replace(/javascript/g, "java")); //replace all javascr
 //g => convert global.... gi => case insensitive
 //i => case insensitive
 document.write("<br>"+str.replace(/javascript/gi, "java")); //replace all javascript with java
+
+
+//trim() method to remove whitespace from both sides of a string
+document.write("<br>"+str.trim()); //remove whitespace from both sides of string
+
+//split() method to split a string into an array of substrings
+document.write("<br>"+str.split(" ")); //split string into array of substrings using space as separator
+
+//arrays
+let spl1=  "Convert string to array"
+console.log(spl1.split(" ")); //split string into array of substrings using space as separator
+let arr1=["apple", "banana", "orange"];
+let arr2=[6,9,"grape", "kiwi", "mango"];
