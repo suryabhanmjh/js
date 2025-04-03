@@ -34,30 +34,44 @@
 
 // day 2 
 
-let str="   Javascript is a programming language javascript is simple    "
+// let str="   Javascript is a programming language javascript is simple    "
 
-//replace() method to replace a string with another string
-document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
+// //replace() method to replace a string with another string
+// document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
 
-//replaceAll() method to replace all occurrences of a string with another string
-document.write("<br>"+str.replaceAll("javascript", "java")); //replace all javascript with java
+// //replaceAll() method to replace all occurrences of a string with another string
+// document.write("<br>"+str.replaceAll("javascript", "java")); //replace all javascript with java
 
-// replace all  by replace method
-document.write("<br>"+str.replace(/javascript/g, "java")); //replace all javascript with java
+// // replace all  by replace method
+// document.write("<br>"+str.replace(/javascript/g, "java")); //replace all javascript with java
 
-//g => convert global.... gi => case insensitive
-//i => case insensitive
-document.write("<br>"+str.replace(/javascript/gi, "java")); //replace all javascript with java
+// //g => convert global.... gi => case insensitive
+// //i => case insensitive
+// document.write("<br>"+str.replace(/javascript/gi, "java")); //replace all javascript with java
 
 
-//trim() method to remove whitespace from both sides of a string
-document.write("<br>"+str.trim()); //remove whitespace from both sides of string
+// //trim() method to remove whitespace from both sides of a string
+// document.write("<br>"+str.trim()); //remove whitespace from both sides of string
 
-//split() method to split a string into an array of substrings
-document.write("<br>"+str.split(" ")); //split string into array of substrings using space as separator
+// //split() method to split a string into an array of substrings
+// document.write("<br>"+str.split(" ")); //split string into array of substrings using space as separator
 
-//arrays
-let spl1=  "Convert string to array"
-console.log(spl1.split(" ")); //split string into array of substrings using space as separator
-let arr1=["apple", "banana", "orange"];
-let arr2=[6,9,"grape", "kiwi", "mango"];
+// //arrays
+// let spl1=  "Convert string to array"
+// console.log(spl1.split(" ")); //split string into array of substrings using space as separator
+// let arr1=["apple", "banana", "orange"];
+// let arr2=[6,9,"grape", "kiwi", "mango"];
+
+//  Template literals (``) are string literals allowing embedded expressions.
+// 1. Support Single('') and double quotes ("") inside the string without using escape characters
+// 2. Support multi-line strings without using escape characters
+// 3. Support  html tags inside the string without using escape characters
+// 4. Support string interpolation using ${} syntax 
+let name = "Sid";
+let age = 22;
+document.write(`Hello, my name is ${name} and I am ${age} years old.`); // Hello, my name is Sid and I am 22 years old.
+//alert
+
+// let str1 = "Hello i am \"Sid\" amd i am from `Bhopal` ";
+// alert(str1); // Hello, apple!
+
