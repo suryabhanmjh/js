@@ -34,10 +34,10 @@
 
 // day 2 
 
-// let str="   Javascript is a programming language javascript is simple    "
+ let str="   Javascript is a programming language javascript is simple    "
 
-// //replace() method to replace a string with another string
-// document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
+//replace() method to replace a string with another string
+ document.write("<br>"+str.replace("javascript", "java")); //replace javascript with java
 
 // //replaceAll() method to replace all occurrences of a string with another string
 // document.write("<br>"+str.replaceAll("javascript", "java")); //replace all javascript with java
@@ -69,7 +69,7 @@
 // 4. Support string interpolation using ${} syntax 
 let name = "Sid";
 let age = 22;
-document.write(`Hello, my name is ${name} and I am ${age} years old.`); // Hello, my name is Sid and I am 22 years old.
+document.write(`<br>Hello, my name is ${name} and I am ${age} years old.`); // Hello, my name is Sid and I am 22 years old.
 //alert
 
 // let str1 = "Hello i am \"Sid\" amd i am from `Bhopal` ";
