@@ -26,3 +26,5 @@ let arr2=[6,7,8,9,10]
 
 let arr3=arr1.concat(arr2) //concatenate two arrays
 console.log(arr3); //print concatenated array
+console.log(arr1); //print first array
+console.log(arr2); //print second array
