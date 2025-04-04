@@ -66,7 +66,7 @@
 // 1. Support Single('') and double quotes ("") inside the string without using escape characters
 // 2. Support multi-line strings without using escape characters
 // 3. Support  html tags inside the string without using escape characters
-// 4. Support string interpolation using ${} syntax 
+// 4. Support string interpolation using ${} syntax acces variable inside the string
 let name = "Sid";
 let age = 22;
 document.write(`<br>Hello, my name is ${name} and I am ${age} years old.`); // Hello, my name is Sid and I am 22 years old.
