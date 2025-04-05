@@ -28,3 +28,14 @@ let arr3=arr1.concat(arr2) //concatenate two arrays
 console.log(arr3); //print concatenated array
 console.log(arr1); //print first array
 console.log(arr2); //print second array
+
+//slice method in array
+let arr4=[1,2,3,4,5,6,7,8,9,10] //array of numbers
+let arr5=arr4.slice(2,5) //slice array from index 2 to 5
+console.log(arr5); //print sliced array
+
+//splice method in array
+// let arr6=[1,2,3,4,5,6,7,8,9,10] //array of numbers
+// let arr7=arr6.splice(2,6,"apple") //splice array from index 2 to 3
+// console.log(arr7); //print spliced array
+
