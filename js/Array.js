@@ -50,3 +50,8 @@ console.log(arr.sort().reverse)
 
 //print array of numbers in desending order
  console.log(arr.sort(function(a,b){return a-b})); //print array of numbers in ascending order
+
+
+ let arr1=[1,2,3,4,5,6,7,8,9] //array of numbers
+ let arr2=[1,2,3,4,5,6,7,8,9] //array of numbers
+ console.log(arr1==arr2); //print array of numbers in ascending order
