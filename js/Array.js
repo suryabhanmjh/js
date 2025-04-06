@@ -47,3 +47,6 @@
 let arr=[1,2,7,3,6,8,9] //array of numbers
 //nsole.log(arr.sort(function(a,b){return b-a})); //print array of numbers in desending order
 console.log(arr.sort().reverse)
+
+//print array of numbers in desending order
+ console.log(arr.sort(function(a,b){return a-b})); //print array of numbers in ascending order
