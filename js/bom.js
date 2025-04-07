@@ -88,6 +88,12 @@ function sur() {
 
     // Task 10: 
 
+    // sum of 4+3 in prompt if user give corect in alert 
+    let prompts= window.prompt(" What is 4+3?");
+    let answer = parseInt(prompts); // Convert the input to an integer
+    alert(answer === 7 ? "Correct!" : "Incorrect, try again.");
+
+
 }
 
 // sur()
