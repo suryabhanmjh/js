@@ -89,9 +89,15 @@ function sur() {
     // Task 10: 
 
     // sum of 4+3 in prompt if user give corect in alert 
-    let prompts= window.prompt(" What is 4+3?");
-    let answer = parseInt(prompts); // Convert the input to an integer
-    alert(answer === 7 ? "Correct!" : "Incorrect, try again.");
+    // let prompts= window.prompt(" What is 4+3?");
+    // let answer = parseInt(prompts); // Convert the input to an integer
+    // alert(answer === 7 ? "Correct!" : "Incorrect, try again.");
+
+
+    // in promp take user name then shoe the charecter count in alert
+     let name = prompt("Enter your name:");
+     let charCount = name.length;
+        alert("Your name has " + charCount + " characters.");
 
 
 }
