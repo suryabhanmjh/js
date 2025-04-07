@@ -100,6 +100,8 @@ function sur() {
         alert("Your name has " + charCount + " characters.");
 
 
+        //document object model DOM
+        // change, access, and manipulate HTML elements
 }
 
 // sur()
