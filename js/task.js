@@ -5,5 +5,7 @@ let count = 0;
 
     button.addEventListener('click', function() {
         count++;
+
         countDisplay.textContent = 'Count: ' + count;
+        
     });
