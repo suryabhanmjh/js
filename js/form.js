@@ -30,7 +30,7 @@ let Val=()=>{
        errnumber.style.color="red"
        return false
     }
-
+// number validation
     else if(isNaN(inputnumber)){
          errnumber.innerHTML="Please enter only number!";
          errnumber.style.color="red"
@@ -49,6 +49,12 @@ let Val=()=>{
        erremail.style.color="red"
        return false
     }
+
+    else if( !(inputemail.includes("@") && inputemail.includes(".com"))){
+        erremail.innerHTML="Please enter valid email!";
+        erremail.style.color="red"
+        return false
+    }
     
     
     
@@ -58,6 +64,19 @@ let Val=()=>{
        return false
     }
  
+    // password ==> Suryabhan@1234
+    else if(inputpass.length<8){
+       errpass.innerHTML="Password must be Suryabhan@1234!"
+       errpass.style.color="red"
+       return false
+    }
+
+    else if(!inputpass.includes("Suryabhan@1234")){
+       errpass.innerHTML="Password must contain @ symbol!"
+       errpass.style.color="red"
+       return false
+    }
+    
     
  
     else if(inputcpass==""){
