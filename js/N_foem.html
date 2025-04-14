@@ -54,4 +54,40 @@
           erremail.innerHTML = "";
           errpass.innerHTML = "";
           errlogin.innerHTML = "";
-    
+          if (inpname === "") {
+        errname.innerHTML = "Please enter your name";
+        return false;
+      } else if (inpnumber === "") {
+        errnumber.innerHTML = "Please enter your number";
+        return false;
+      } else if (isNaN(inpnumber)) {
+        errnumber.innerHTML = "Number must be numeric";
+        return false;
+      } else if (inpnumber.length !== 10) {
+        errnumber.innerHTML = "Please enter a 10-digit number";
+        return false;
+      } else if (!inpemail.includes("@") || !inpemail.includes(".com")) {
+        erremail.innerHTML = "Please enter a valid email";
+        return false;
+      } else if (inppassword === "") {
+        errpass.innerHTML = "Please enter a password";
+        return false;
+      } else if (inppassword !== inpcpass) {
+        errlogin.innerHTML = "Passwords do not match";
+       document.querySelector("#con-password").value ="";                  //confirm pass blank hojaye agr glt dala to 
+       document.querySelector("#con-password").focus();                   //confirm pass pr cursor chla jaye by focus() function 
+        return false;
+      }
+      else if(!(inppassword.match([/1234567890/] && [/!@#$%^&*()_+/] && [/A-Z/] && [/a-z/])) )  {    //match means inme se ek hona chahiye
+        errpass.innerHTML = "Please enter a strong password";
+        return false;
+      }  
+      
+      document.querySelector("#statusMsg").innerHTML = "Form submitted successfully!";
+      return true;
+   
+
+    }
+  </script>
+</body>
+</html>
