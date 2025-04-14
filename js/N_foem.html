@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Improved Form</title>
+</head>
+<body>
+
+   <div class="overlay"></div>
+
+  <!-- Form -->
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <p id="errname"></p>
+      <input type="text" id="name" placeholder="Your Name" />
+
+      <p id="errnumber"></p>
+      <input type="text" id="number" placeholder="Your Number" />
+
+      <p id="erremail"></p>
+      <input type="text" id="email" placeholder="Your Email" />
+
+      <p id="errpass"></p>
+      <input type="text" id="password" placeholder="Your Password" />
+
+      <p id="errlogin"></p>
+      <input type="text" id="con-password" placeholder="Confirm Password" />
+
+      <input type="submit" value="Login" onclick="return val()">
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+
+
+    <!-- JS -->
+    <script>
+        let val = () => {
+          let inpname = document.querySelector("#name").value.trim();
+          let inpnumber = document.querySelector("#number").value.trim();
+          let inpemail = document.querySelector("#email").value.trim();
+          let inppassword = document.querySelector("#password").value.trim();
+          let inpcpass = document.querySelector("#con-password").value.trim();
+    
+          let errname = document.querySelector("#errname");
+          let errnumber = document.querySelector("#errnumber");
+          let erremail = document.querySelector("#erremail");
+          let errpass = document.querySelector("#errpass");
+          let errlogin = document.querySelector("#errlogin");
+    
+          // Clear previous errors
+          errname.innerHTML = "";
+          errnumber.innerHTML = "";
+          erremail.innerHTML = "";
+          errpass.innerHTML = "";
+          errlogin.innerHTML = "";
+    
