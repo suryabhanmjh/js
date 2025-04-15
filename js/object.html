@@ -33,6 +33,16 @@ let {name, age, city} = obj;  // name = Suryabhan, age = 23
     console.log(age);   // 23
     console.log(city);  //city  
     // destructuring with default value
+
+
+    //Spread operator
+    //the spread operator (...) is used to expand or spread an iterable (like an array or object) into its individual elements.
+    //It allows you to create a new array or object by combining existing ones or by spreading elements into a new context.
+
+    let obj1 = {name: "Suryabhan", age: 23, city: "Satna"};
+    let obj2 = {college: "Sage", dig: "B.tech" };
+    let obj3 = {...obj1, ...obj2};  // Spread operator is used to combine two objects into one object
+    console.log(obj3);  // {name: "Suryabhan", age: 23, city: "Satna", college: "Sage", dig: "B.tech"}
 </script>
 </body>
 </html>
