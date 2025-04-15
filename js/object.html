@@ -9,17 +9,30 @@
 
 
     <script>
-    let obj = {
-        // key : value
-        name : "Suryabhan",
-        age: 22,
-        city: "Satna"
-    }
-    console.log(obj);    // To print full object
-    console.log(obj.name)  //Suryabhan
-    obj.College = "Sage"  // To add new key value pair in object  
-    console.log(obj);    // To print full object
-    obj.age = 23;   // To update value of key in object
+    // let obj = {
+    //     // key : value
+    //     name : "Suryabhan",
+    //     age: 22,
+    //     city: "Satna"
+    // }
+    // console.log(obj);    // To print full object
+    // console.log(obj.name)  //Suryabhan
+    // obj.College = "Sage"  // To add new key value pair in object  
+    // console.log(obj);    // To print full object
+    // obj.age = 23;   // To update value of key in object
+    // // Delete key from object
+    // delete obj.city;  // To delete key from object
+    // console.log(obj);    // To print full object
+
+// destructuring of object
+// destructuring is a way to extract values from an object and assign them to variables.
+//or we can say destructuring is a way to unpack values from arrays, or properties from objects, into distinct variables.
+let obj ={name: "Suryabhan", age: 23, city: "Satna"};    
+let {name, age, city} = obj;  // name = Suryabhan, age = 23
+    console.log(name);   // Suryabhan
+    console.log(age);   // 23
+    console.log(city);  //city  
+    // destructuring with default value
 </script>
 </body>
 </html>
