@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a paragraph by click the button hide and show by single button   -->
+    <p id="para">hello my name is Suryabhan Singh.</p>
+    <button id="btn" onclick="show_hide()">Hide</button>
+    <script>
+        function show_hide() {
+            let para = document.getElementById("para");
+            let btn = document.getElementById("btn");
+            if (para.style.display === "none") {
+                para.style.display = "block";
+                btn.innerHTML = "Hide";
+            } else {
+                para.style.display = "none";
+                btn.innerHTML = "Show";
+            }
+        }
+    </script>
+
+</body>
+</html>
