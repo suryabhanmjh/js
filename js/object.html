@@ -50,15 +50,25 @@ let {name, age, city} = obj;  // name = Suryabhan, age = 23
         age: 23,
         city: "Satna",
     }
-
+//object
     for (let key in stu) {
         console.log(key + " : " + stu[key]);  // name : Suryabhan, age : 23, city : Satna
     }
-
+//array
     let arr = [1, 2, 3, 4, 5];
     for (let i of arr) {
         console.log(i);  // 0, 1, 2, 3, 4
     }
+// multiple by 2
+
+//map method
+//The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+    let num= [1, 2, 3, 4, 5];
+    let newarr=num.map((e) => {
+    return e*2  // 2, 4, 6, 8, 10
+    })
+    console.log(newarr);  // [2, 4, 6, 8, 10]
+
 </script>
 </body>
 </html>
