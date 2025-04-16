@@ -43,6 +43,22 @@ let {name, age, city} = obj;  // name = Suryabhan, age = 23
     let obj2 = {college: "Sage", dig: "B.tech" };
     let obj3 = {...obj1, ...obj2};  // Spread operator is used to combine two objects into one object
     console.log(obj3);  // {name: "Suryabhan", age: 23, city: "Satna", college: "Sage", dig: "B.tech"}
+
+    // looop
+    let stu = {
+        name: "Suryabhan Singh",
+        age: 23,
+        city: "Satna",
+    }
+
+    for (let key in stu) {
+        console.log(key + " : " + stu[key]);  // name : Suryabhan, age : 23, city : Satna
+    }
+
+    let arr = [1, 2, 3, 4, 5];
+    for (let i of arr) {
+        console.log(i);  // 0, 1, 2, 3, 4
+    }
 </script>
 </body>
 </html>
