@@ -69,6 +69,30 @@ let {name, age, city} = obj;  // name = Suryabhan, age = 23
     })
     console.log(newarr);  // [2, 4, 6, 8, 10]
 
+    //call back function
+    //A callback function is a function that is passed as an argument to another function and is executed after some operation is completed. (e.g. setTimeout, event listeners)
+    //Callbacks are often used in asynchronous programming to handle the result of an operation once it is finished.
+ 
+    //higher order function
+    //A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. (.e.g. map, filter, reduce)
+    //Higher-order functions allow you to create more abstract and reusable code by treating functions as first-class citizens.
+
+
+    //filter method
+    //The filter() method creates a new array with all elements that pass the test implemented by the provided function. (e.g. even numbers)
+    let num1= [1, 2, 3, 4, 5];
+    let newarr1=num1.filter((e) => {
+        return e%2==0  // 2, 4
+    })
+    console.log(newarr1);  // [2, 4]
+
+    // greater than 6
+    let num2= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let newarr2=num2.filter((e) => {
+        return e>6  // 7, 8, 9, 10
+    })
+    console.log(newarr2);  // [7, 8, 9, 10]
+
 </script>
 </body>
 </html>
