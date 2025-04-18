@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button on ></button>
+    <script>
+        // setInterval is used to call a function at specified intervals (in milliseconds). It continues to call the function until clearInterval() is called or the window is closed.
+        // setInterval(function, milliseconds, param1, param2, ...)
+        // The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+
+        let i = 1;
+        let intervalId = setInterval(function() {
+            display.log(i);
+            i++;
+            if (i === 10) {
+                clearInterval(intervalId); // Stop the interval after 10 iterations
+            }
+        }, 3000); // Call the function every 1000 milliseconds (1 second)
+    </script>
+</body>
+</html>
