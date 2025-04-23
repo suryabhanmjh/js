@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      table {
+        width: 80%;
+        margin: 30px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+      }
+
+      thead {
+        background: linear-gradient(to right, #667eea, #764ba2);
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f3f3f3;
+      }
+
+      tr:hover {
+        background-color: #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+
+    <script>
+      let ProductData = [
+        { product: "Laptop", price: "$999", category: "Electronics" },
+        { product: "Desk Chair", price: "$199", category: "Furniture" },
+        { product: "Pen Set", price: "$15", category: "Stationery" },
+        { product: "Backpack", price: "$45", category: "Accessories" },
+        { product: "Smartphone", price: "$699", category: "Electronics" },
+      ];
+
+      let tableBody = document.querySelector("#productTable");
+
+      ProductData.map((item) => {
+        tableBody.innerHTML += `
+        <tr>
+          <td>${item.product}</td>
+          <td>${item.price}</td>
+          <td>${item.category}</td>
+        </tr>
+      `;
+      });
+    </script>
+  </body>
+</html>
