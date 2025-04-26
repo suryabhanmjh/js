@@ -1,0 +1,40 @@
+Tabular Data from Array of Objects in HTML
+
+<html>
+  <body>
+    <table id="dataTable"  style="border: 1px solid black;" border="">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+
+    <script>
+      const data = [
+        { name: 'Suryabhan', age: 25, city: 'Bhopal' },
+        { name: 'Yesh', age: 23, city: 'Bhopal' },
+        { name: 'Suraj', age: 22, city: 'Bhopal' },
+        { name: 'Riya', age: 20, city: 'Bhopal' },
+        { name: 'Ritu', age: 21, city: 'Bhopal' }
+      ];
+
+      const tableBody = document.querySelector('#tableBody');
+      data.forEach((item) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>${item.age}</td>
+          <td>${item.city}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    </script>
+  </body>
+</html>
+
+

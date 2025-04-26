@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">Name: Cybron</div>
+    <button id="toggleBtn">Hide</button>
+
+    <script>
+      const text = document.querySelector('#text');
+      const btn = document.querySelector('#toggleBtn');
+      btn.addEventListener('click', () => {
+        if (text.style.display === 'none') {
+          text.style.display = 'block';
+          btn.textContent = 'Hide';
+        } else {
+          text.style.display = 'none';
+          btn.textContent = 'Show';
+        }
+      });
+    </script>
+
+</body>
+</html>
